@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-14</title>
+    <script src="index.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        font-size: 50px;
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .count {
+        display: flex;
+        justify-content: center;
+      }
+      .count h2 {
+        font-size: 40px;
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+      #minus:hover,
+      #add:hover {
+        box-shadow: 0px 0px 3px 3px white;
+      }
+      #minus {
+        background-color: rgb(172, 233, 87);
+        padding: 0px 15px 5px 15px;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+      #add {
+        background-color: rgb(172, 233, 87);
+        padding: 5px 14px 5px 12px;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>COUNTER</h1>
+    <div class="count">
+      <button id="minus" onclick="sub()" disabled>-</button>
+      <h2 id="content">0</h2>
+      <button id="add" onclick="add()">+</button>
+    </div>
+  </body>
+</html>
